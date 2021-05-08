@@ -29,7 +29,7 @@ public class QuestTake001 : MonoBehaviour {
 				UIQuest.SetActive (true);
 				NoticeCam.SetActive (true);
 				ThePlayer.SetActive (false);
-				Screen.lockCursor = false;
+				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
                 // if(Input.GetKey("q")){
                 //     GameButtonManager.GetComponent<Quest001Buttons>().AcceptQuest();
