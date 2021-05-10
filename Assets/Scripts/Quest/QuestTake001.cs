@@ -10,7 +10,6 @@ public class QuestTake001 : MonoBehaviour {
 	public GameObject UIQuest;
 	public GameObject ThePlayer;
 	public GameObject NoticeCam;
-    // public GameObject GameButtonManager;
 
 	void Update () {
 		TheDistance = PlayerCasting.DistanceFromTarget;
@@ -18,6 +17,7 @@ public class QuestTake001 : MonoBehaviour {
 
 	void OnMouseOver () {
 		if (TheDistance <= 3) {
+			SwordBlocker.SwordBlock=1;
 			ActionDisplay.SetActive (true);
 			ActionText.SetActive (true);
 		}
@@ -26,20 +26,18 @@ public class QuestTake001 : MonoBehaviour {
 			if (TheDistance <= 3) {
 				ActionDisplay.SetActive (false);
 				ActionText.SetActive (false);
+				SwordBlocker.SwordBlock=2;
 				UIQuest.SetActive (true);
 				NoticeCam.SetActive (true);
 				ThePlayer.SetActive (false);
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
-                // if(Input.GetKey("q")){
-                //     GameButtonManager.GetComponent<Quest001Buttons>().AcceptQuest();
-				// 	FindObjectOfType<Quest001Buttons>().AcceptQuest();
-                // }
 			}
 		}
 	}
 
 	void OnMouseExit() {
+		SwordBlocker.SwordBlock=0;
 		ActionDisplay.SetActive (false);
 		ActionText.SetActive (false);
 	}

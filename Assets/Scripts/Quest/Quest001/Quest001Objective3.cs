@@ -13,6 +13,8 @@ public class Quest001Objective3 : MonoBehaviour
 	public GameObject TheObjective;
 	public int CloseObjective;
 	public GameObject ChestBlock;
+	public GameObject ExMark;
+	public GameObject CompleteTrigger;
 
 	void Update () {
 		TheDistance = PlayerCasting.DistanceFromTarget;
@@ -41,6 +43,9 @@ public class Quest001Objective3 : MonoBehaviour
 				FakeSword.SetActive (false);
 				RealSword.SetActive (true);
 				ChestBlock.SetActive (true);
+				TheObjective.SetActive (true);
+				ExMark.SetActive (true);
+				CompleteTrigger.SetActive (true);
 				CloseObjective = 3;
 				ActionText.SetActive (false);
 				ActionDisplay.SetActive (false);

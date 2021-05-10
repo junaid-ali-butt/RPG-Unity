@@ -12,6 +12,9 @@ public class Quest001Buttons : MonoBehaviour {
 	public GameObject Objective01;
 	public GameObject Objective02;
 	public GameObject Objective03;
+	public GameObject ExMark;
+	public GameObject NoticeTrigger;
+	public GameObject QuestNotice;
 
 	public void AcceptQuest () {
 		ThePlayer.SetActive (true);
@@ -26,6 +29,9 @@ public class Quest001Buttons : MonoBehaviour {
 		Objective02.GetComponent<Text> ().text = "Open the chest";
 		Objective03.GetComponent<Text> ().text = "Retrieve the weapon";
 		QuestManager.ActiveQuestNumber = 1;
+		QuestNotice.SetActive(false);
+		NoticeTrigger.SetActive(false);
+		ExMark.SetActive(false);
 		yield return new WaitForSeconds (0.5f);
 		ActiveQuestBox.SetActive (true);
 		yield return new WaitForSeconds (1);
