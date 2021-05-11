@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 14
+  controlID: 47
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 15
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 16
+  controlID: 53
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,24 +392,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 37}
-      m_SelectedIDs: 5294ffff
-      m_LastClickedID: -27566
-      m_ExpandedIDs: ceb6ffff8ec5fffff6c5fffffe580000
+      scrollPos: {x: 0, y: 117}
+      m_SelectedIDs: c654ffff
+      m_LastClickedID: -43834
+      m_ExpandedIDs: 0afbffff72fbffffac360000ca370000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Q001_Objective1
-        m_OriginalName: Q001_Objective1
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 22728
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6297956, y: 5.5902915, z: 5.1755114}
+    m_Target: {x: 5.2978544, y: 3.48773, z: 5.789245}
     speed: 2
-    m_Value: {x: 2.6297956, y: 5.5902915, z: 5.1755114}
+    m_Value: {x: 5.2978544, y: 3.48773, z: 5.789245}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -503,13 +503,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.3217599, y: -0.38980117, z: 0.1475286, w: -0.8501588}
+    m_Target: {x: -0.10551041, y: -0.6469055, z: 0.0910356, w: -0.74973595}
     speed: 2
-    m_Value: {x: -0.32175845, y: -0.38979942, z: 0.14752793, w: -0.85015494}
+    m_Value: {x: 0.10551041, y: 0.6469055, z: -0.0910356, w: 0.749736}
   m_Size:
-    m_Target: 1.2918739
+    m_Target: 4.93471
     speed: 2
-    m_Value: 1.2918739
+    m_Value: 4.93471
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -527,7 +527,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.10551041, y: -0.6469055, z: 0.0910356, w: -0.74973595}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -599,20 +599,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Enemy Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Enemy Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Hp\unity-learning\RPG Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 165a0000
-    m_LastClickedID: 23062
-    m_ExpandedIDs: 000000000a5a00000c5a00000e5a0000105a0000125a0000145a0000165a0000185a00001a5a00001c5a000000ca9a3b
+    scrollPos: {x: 0, y: 39}
+    m_SelectedIDs: 9c920000
+    m_LastClickedID: 37532
+    m_ExpandedIDs: 000000008e390000903900009239000094390000963900009a3900009c3900009e390000a0390000d671000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a5a00000c5a00000e5a0000105a0000125a0000145a0000165a0000185a00001a5a00001c5a0000
+    m_ExpandedIDs: 000000008e39000090390000923900009439000096390000983900009a3900009c3900009e390000a0390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 22552
+  m_LastSelectedObjectID: -43834
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
