@@ -53,12 +53,14 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\SpiderAI.cs" />
      <Compile Include="Assets\Scripts\Cutscene\CutsceneScript.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\InflictDamage.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\SpiderEnemy.cs" />
      <Compile Include="Assets\Scripts\GlobalExp.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HeartCollect.cs" />
+     <Compile Include="Assets\Scripts\NPCInteractions\NPC001.cs" />
      <Compile Include="Assets\Scripts\PlayerCasting.cs" />
      <Compile Include="Assets\Scripts\Quest\Quest001\Quest001Objective1.cs" />
      <Compile Include="Assets\Scripts\Quest\Quest001\Quest001Objective2.cs" />
