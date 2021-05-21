@@ -24,11 +24,13 @@ public class QuestComplete001 : MonoBehaviour {
 
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3) {
+				QuestManager.SubQuestNumber=0;
 				ActionDisplay.SetActive (false);
 				ActionText.SetActive (false);
 				ExMark.SetActive (false);
 				CompleteTrigger.SetActive(false);
 				GlobalExp.CurrentExp += 100;
+				GlobalCash.GoldAmount += 100;
 			}
 		}
 	}

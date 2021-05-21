@@ -22,12 +22,16 @@ public class Quest001Objective1 : MonoBehaviour
     }
 
     void OnTriggerEnter(){
+        QuestManager.SubQuestNumber=2;
+        GetComponent<BoxCollider>().enabled = false;
         StartCoroutine (FinishObjective());
+        // gameObject.SetActive(false);
     }
 
     IEnumerator FinishObjective(){
         TheObjective.SetActive(true);
         yield return new WaitForSeconds(1f);
         CloseObjective=1;
+        // gameObject.SetActive(false);
     }
 }

@@ -11,6 +11,7 @@ public class SpiderAI : MonoBehaviour
     public float EnemySpeed;
     public int AttackTrigger;
     public RaycastHit Shot;
+    public int DealingDamage;
 
     // Update is called once per frame
     void Update()
@@ -26,15 +27,19 @@ public class SpiderAI : MonoBehaviour
                 if(AttackTrigger == 0){
                     TheEnemy.GetComponent<Animation>().Play("walk");
                     transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, EnemySpeed);
-                }else{
-                    EnemySpeed=0;
-                    TheEnemy.GetComponent<Animation>().Play("idle");
                 }
+
+            }else{
+                EnemySpeed=0;
+                TheEnemy.GetComponent<Animation>().Play("idle");
             }
 
             if(AttackTrigger == 1){
-                EnemySpeed=0;
-                TheEnemy.GetComponent<Animation>().Play("attack");
+                if(DealingDamage == 0){
+                    EnemySpeed=0;
+                    TheEnemy.GetComponent<Animation>().Play("attack");
+                    StartCoroutine(TakingDamage());
+                }
             }
         }
     }
@@ -45,5 +50,15 @@ public class SpiderAI : MonoBehaviour
 
     void OnTriggerExit() {
         AttackTrigger = 0;
+    }
+
+    IEnumerator TakingDamage(){
+        DealingDamage=2;
+        yield return new WaitForSeconds(0.5f);
+        if(SpiderEnemy.GlobalSpiderStatus != 6){
+            Health.HealthValue -= 1;
+        }
+        yield return new WaitForSeconds(0.5f);
+        DealingDamage=0;
     }
 }

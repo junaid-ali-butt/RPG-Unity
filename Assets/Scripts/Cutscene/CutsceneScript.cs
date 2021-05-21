@@ -36,5 +36,7 @@ public class CutsceneScript : MonoBehaviour
         FadeIn.SetActive(true);
         FadeOut.SetActive(false);
         Camera03.SetActive(false);
+        yield return new WaitForSeconds(1);
+        FadeIn.SetActive(false);
     }
 }

@@ -20,6 +20,7 @@ public class Quest001Objective3 : MonoBehaviour
 		TheDistance = PlayerCasting.DistanceFromTarget;
 
 		if (CloseObjective == 3) {
+			TheObjective.SetActive (true);
 			if (TheObjective.transform.localScale.y <= 0.0f) {
 				CloseObjective = 0;
 				TheObjective.SetActive (false);
@@ -39,11 +40,11 @@ public class Quest001Objective3 : MonoBehaviour
 
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3) {
+				QuestManager.SubQuestNumber=3;
 				this.GetComponent<BoxCollider> ().enabled = false;
 				FakeSword.SetActive (false);
 				RealSword.SetActive (true);
 				ChestBlock.SetActive (true);
-				TheObjective.SetActive (true);
 				ExMark.SetActive (true);
 				CompleteTrigger.SetActive (true);
 				CloseObjective = 3;
