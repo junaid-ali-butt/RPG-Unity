@@ -12,6 +12,7 @@ public class NPC001 : MonoBehaviour
     public GameObject TextBox;
     public GameObject NPCName;
     public GameObject NPCText;
+	public GameObject MiniMap;
 
 	void Update () {
 		TheDistance = PlayerCasting.DistanceFromTarget;
@@ -28,11 +29,12 @@ public class NPC001 : MonoBehaviour
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3) {
                 SwordBlocker.SwordBlock=2;
+				MiniMap.SetActive (false);
 				ActionDisplay.SetActive (false);
 				ActionText.SetActive (false);
 				//ThePlayer.SetActive (false);
-				Cursor.lockState = CursorLockMode.None;
-				Cursor.visible = true;
+				//Cursor.lockState = CursorLockMode.None;
+				//Cursor.visible = true;
                 StartCoroutine (NPC001Active());
 			}
 		}
@@ -48,7 +50,7 @@ public class NPC001 : MonoBehaviour
         TextBox.SetActive(true);
         NPCName.GetComponent<Text>().text="Tim";
         NPCName.SetActive(true);
-        NPCText.GetComponent<Text>().text="Hello there! I have a quest for you! Should you accept it, please come back here later";
+        NPCText.GetComponent<Text>().text="Hello there! I have a quest for you! Should you accept it, please come back here later.";
         NPCText.SetActive(true);
         yield return new WaitForSeconds(5.5f);
         NPCName.SetActive(false);
@@ -56,5 +58,6 @@ public class NPC001 : MonoBehaviour
         TextBox.SetActive(false);
         ActionDisplay.SetActive (true);
 		ActionText.SetActive (true);
+		MiniMap.SetActive (true);
     }
 }

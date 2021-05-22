@@ -10,6 +10,7 @@ public class QuestTake001 : MonoBehaviour {
 	public GameObject UIQuest;
 	public GameObject ThePlayer;
 	public GameObject NoticeCam;
+	public GameObject MiniMap;
 
 	void Update () {
 		TheDistance = PlayerCasting.DistanceFromTarget;
@@ -25,6 +26,7 @@ public class QuestTake001 : MonoBehaviour {
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3) {
 				ActionDisplay.SetActive (false);
+				MiniMap.SetActive (false);
 				ActionText.SetActive (false);
 				SwordBlocker.SwordBlock=2;
 				UIQuest.SetActive (true);
