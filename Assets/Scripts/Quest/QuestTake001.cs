@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestTake001 : MonoBehaviour {
 
@@ -19,6 +20,7 @@ public class QuestTake001 : MonoBehaviour {
 	void OnMouseOver () {
 		if (TheDistance <= 3) {
 			SwordBlocker.SwordBlock=1;
+			ActionDisplay.GetComponent<Text>().text = "View Quest";
 			ActionDisplay.SetActive (true);
 			ActionText.SetActive (true);
 		}

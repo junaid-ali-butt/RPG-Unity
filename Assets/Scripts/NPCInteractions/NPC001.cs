@@ -47,17 +47,32 @@ public class NPC001 : MonoBehaviour
 	}
 
     IEnumerator NPC001Active(){
-        TextBox.SetActive(true);
-        NPCName.GetComponent<Text>().text="Tim";
-        NPCName.SetActive(true);
-        NPCText.GetComponent<Text>().text="Hello there! I have a quest for you! Should you accept it, please come back here later.";
-        NPCText.SetActive(true);
-        yield return new WaitForSeconds(5.5f);
-        NPCName.SetActive(false);
-        NPCText.SetActive(false);
-        TextBox.SetActive(false);
-        ActionDisplay.SetActive (true);
-		ActionText.SetActive (true);
-		MiniMap.SetActive (true);
+		if(QuestManager.ActiveQuestNumber == 2){
+			TextBox.SetActive(true);
+        	NPCName.GetComponent<Text>().text="Tim";
+        	NPCName.SetActive(true);
+        	NPCText.GetComponent<Text>().text="You're finally here. I need you to kill the spiders and their boss.";
+        	NPCText.SetActive(true);
+        	yield return new WaitForSeconds(5.5f);
+        	NPCName.SetActive(false);
+        	NPCText.SetActive(false);
+        	TextBox.SetActive(false);
+        	ActionDisplay.SetActive (true);
+			ActionText.SetActive (true);
+			MiniMap.SetActive (true);
+		}else{
+			TextBox.SetActive(true);
+        	NPCName.GetComponent<Text>().text="Tim";
+        	NPCName.SetActive(true);
+        	NPCText.GetComponent<Text>().text="Hello there! I have a quest for you! Should you accept it, please come back here later.";
+        	NPCText.SetActive(true);
+        	yield return new WaitForSeconds(5.5f);
+        	NPCName.SetActive(false);
+        	NPCText.SetActive(false);
+        	TextBox.SetActive(false);
+        	ActionDisplay.SetActive (true);
+			ActionText.SetActive (true);
+			MiniMap.SetActive (true);
+		}
     }
 }
