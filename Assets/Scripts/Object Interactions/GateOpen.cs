@@ -10,6 +10,7 @@ public class GateOpen : MonoBehaviour
 	public GameObject ActionText;
     public GameObject LeftGate;
     public GameObject RightGate;
+	public GameObject Enemies;
 
 	void Update () {
 		TheDistance = PlayerCasting.DistanceFromTarget;
@@ -25,6 +26,7 @@ public class GateOpen : MonoBehaviour
 
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3) {
+				Enemies.SetActive(true);
                 StartCoroutine (OpenTownGate());
 			}
 		}
@@ -40,9 +42,9 @@ public class GateOpen : MonoBehaviour
         ActionDisplay.SetActive (false);
 		ActionText.SetActive (false);
         gameObject.GetComponent<BoxCollider>().enabled=false;
-        LeftGate.GetComponent<Animation>().Play("LeftGateOpenAnim");
-        RightGate.GetComponent<Animation>().Play("RightGateOpenAnim");
-        yield return new WaitForSeconds(12);
+        LeftGate.GetComponent<Animation>().Play("LeftGatePivotAnim");
+        RightGate.GetComponent<Animation>().Play("RightGatePivotAnim");
+        yield return new WaitForSeconds(9.5f);
         gameObject.GetComponent<BoxCollider>().enabled=true;
     }
 

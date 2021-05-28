@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpiderEnemy : MonoBehaviour
 {
-    public int EnemyHealth = 10;
+    public int EnemyHealth = 5;
 	public GameObject TheSpider;
 	public int SpiderStatus;
 	public int BaseExp = 10;

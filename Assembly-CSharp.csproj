@@ -56,8 +56,10 @@
      <Compile Include="Assets\Scripts\AI Scripts\NPCWalk.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\SpiderAI.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\SpiderBossAI.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\SpiderBossAttack.cs" />
      <Compile Include="Assets\Scripts\Cutscene\CutsceneScript.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\InflictDamage.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\SpiderBossEnemy.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\SpiderEnemy.cs" />
      <Compile Include="Assets\Scripts\Experience\GlobalExp.cs" />
      <Compile Include="Assets\Scripts\Experience\GlobalLvl.cs" />
@@ -65,6 +67,7 @@
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HeartCollect.cs" />
      <Compile Include="Assets\Scripts\NPCInteractions\NPC001.cs" />
+     <Compile Include="Assets\Scripts\NPCInteractions\NPC001_Comp.cs" />
      <Compile Include="Assets\Scripts\Object Interactions\GateOpen.cs" />
      <Compile Include="Assets\Scripts\PlayerCasting.cs" />
      <Compile Include="Assets\Scripts\Quest\Quest001\Quest001Objective1.cs" />
